@@ -25,7 +25,7 @@ export const updateArsip = (id, arsip) => updateDoc(doc(db, 'arsip', id), arsip)
 
 export const deleteArsip = (id) => deleteDoc(doc(db, 'arsip', id))
 
-export const useLoadarsip = () => {
+export const useLoadArsip = () => {
   const arsip = ref([])
   const unsubscribe = onSnapshot(arsipCollection, (snapshot) => {
     arsip.value = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))

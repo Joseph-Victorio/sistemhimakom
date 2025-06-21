@@ -37,12 +37,12 @@ export default {
 </script>
 
 <template>
-  <div class="max-w-xl mx-auto mt-10 p-5 bg-white dark:bg-foreground rounded-xl shadow-md">
+  <div class="max-w-2xl mx-auto mt-10 p-5 bg-white dark:bg-foreground rounded-xl shadow-md">
     <div class="text-white">
       <p class="text-xl font-bold">List User</p>
       <hr />
     </div>
-    <table class="border border-white mt-5">
+    <table class="w-xl border border-white mt-5">
       <thead>
         <tr class="border border-white text-white">
           <th>Aksi</th>
@@ -55,10 +55,10 @@ export default {
         <tr
           v-for="{ id, name, username, role } in paginatedUsers"
           :key="id"
-          class="text-white"
+          class="text-white text-center"
         >
-          <td class="p-2  border-b-2 border-white">
-            <div class="flex gap-2">
+          <td class="p-2   border-b-2 border-white">
+            <div class="flex gap-2 justify-center">
               <router-link :to="`/user-edit/${id}`">
                 <button class="cursor-pointer">
                   <v-icon name="hi-pencil-alt" scale="1" class="text-green-500" />

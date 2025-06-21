@@ -9,9 +9,9 @@ import 'vue3-toastify/dist/index.css'
 
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 
-import { GiMoneyStack, GiPayMoney, GiReceiveMoney, HiPencilAlt, MdDeleteforever } from 'oh-vue-icons/icons'
+import { GiMoneyStack, GiPayMoney, GiReceiveMoney, HiPencilAlt, MdDeleteforever, MdKeyboardbackspaceSharp } from 'oh-vue-icons/icons'
 
-addIcons(GiMoneyStack, GiPayMoney, GiReceiveMoney, HiPencilAlt, MdDeleteforever);
+addIcons(GiMoneyStack, GiPayMoney, GiReceiveMoney, HiPencilAlt, MdDeleteforever, MdKeyboardbackspaceSharp);
 
 const app = createApp(App)
 app.component('v-icon', OhVueIcon)

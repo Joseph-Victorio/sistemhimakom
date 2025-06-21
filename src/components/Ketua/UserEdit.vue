@@ -24,7 +24,7 @@ export default {
       await updateUser(userId.value, { ...form })
       toast.success('Berhasil update user')
       setTimeout(() => {
-        router.push('/ketua/add-user')
+        router.push('/ketua/user')
       }, 2000)
     }
     return { form, update }
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 <template>
-  <div class="p-5">kembali</div>
+   <a href="/ketua/user" class="text-white hover:text-primary ease-in-out duration-300 flex gap-2 items-center  group "><v-icon name="md-keyboardbackspace-sharp" class="text-white group-hover:text-primary"/> Kembali</a>
   <div class="max-w-xl m-5 mt-10 p-6 bg-foreground rounded-xl shadow-md">
     <div class="text-white mb-5">
       <p class="text-xl font-bold">Edit User</p>

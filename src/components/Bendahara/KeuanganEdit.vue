@@ -30,7 +30,7 @@ export default {
     const update = async () => {
       try {
         await updateKeuangan(keuanganId.value, { ...form })
-        toast.success('Berhasil update keuangan')
+        toast.success('Berhasil update data!')
         setTimeout(() => {
           router.push('/bendahara/keuangan')
         }, 2000)
@@ -43,6 +43,7 @@ export default {
 }
 </script>
 <template>
+     <a href="/bendahara/keuangan" class="text-white hover:text-primary ease-in-out duration-300 flex gap-2 items-center  group "><v-icon name="md-keyboardbackspace-sharp" class="text-white group-hover:text-primary"/> Kembali</a>
   <div class="md:w-[600px] my-5 mt-10 p-6 bg-foreground rounded-xl shadow-md">
     <div class="text-white mb-5">
       <p class="text-xl font-bold">Tambah Data Keuangan</p>

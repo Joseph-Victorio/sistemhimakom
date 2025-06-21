@@ -66,19 +66,7 @@ const router = createRouter({
       path:'/sekretaris-edit/:id',
       component:SekretarisEdit
     },
-    // ASET IT
-    {
-      path:'/sekretaris/arsip',
-      component:SekretarisCrudView
-    },
-    {
-      path:'/sekretaris/dashboard',
-      component:SekretarisDashboard
-    },
-    {
-      path:'/sekretaris-edit/:id',
-      component:SekretarisEdit
-    },
+    
     // ASET IT
     {
       path:'/aset-it/inventori',

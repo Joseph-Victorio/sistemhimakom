@@ -26,7 +26,19 @@ export const getUser = async (id) => {
   return userDoc.exists() ? userDoc.data() : null
 }
 
-export const updateUser = (id, user) => updateDoc(doc(db, 'users', id), user)
+
+export const updateUser = async (id, user) => {
+  const updatedUser = { ...user }
+
+  // If password exists and is not already hashed
+  if (updatedUser.password && !updatedUser.password.startsWith('$2a$')) {
+    const salt = await bcrypt.genSalt(10)
+    updatedUser.password = await bcrypt.hash(updatedUser.password, salt)
+  }
+
+  return updateDoc(doc(db, 'users', id), updatedUser)
+}
+
 
 export const deleteUser = (id) => deleteDoc(doc(db, 'users', id))
 

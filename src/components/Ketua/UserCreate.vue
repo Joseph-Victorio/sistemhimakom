@@ -83,8 +83,8 @@ export default {
             class="text-white dark:bg-gray-700 mt-1 px-2 py-2 border border-gray-300 dark:border-gray-600 rounded-md w-full"
           >
             <option value="" disabled>Pilih Divisi</option>
-            <option value="Wakil ">Wakil</option>
-            <option value="Sekretaris 1 ">Sekretaris</option>
+            <option value="Wakil">Wakil</option>
+            <option value="Sekretaris">Sekretaris</option>
             <option value="Bendahara">Bendahara</option>
             <option value="Kepala Divisi Aset IT">Kepala Divisi Aset IT</option>
             <option value="Staf Aset IT">Staf Aset IT</option>
